@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+	<title>Eashan Saikia</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+
+	<!-- Header -->
+	<header id="header" class="alt">
+		<div class="logo "><a href="index.html">Eashan Saikia</a></div>
+
+		<div id="menu1">
+			<a href="index.html">Home</a>
+			<a href="myresearch.html">Research</a>
+			<a href="adventures.html">Adventures</a>
+			<a href="contact.html">Contact</a>
+		</div>
+
+		<div id="menu2">
+			<a href="#menu"><i class="fa fa-bars padding-2"></i></a>
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="myresearch.html">Research</a></li>
+					<li><a href="adventures.html">Adventures</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+		<!-- Contact details -->
+        <section id="contact" class="wrapper style2">
+            <div class="inner">
+                <div class="box">
+                    <div class="content">
+                        <header class="align-center">
+                            <h2>Get in touch with me</h2>
+                        </header>
+                        <form action="contactForm.php" name="contact_form" method="POST" enctype="multipart/form-data">
+                        <div class="align-center">
+                            <input class="contact-text" type="text" name="visitor_name" placeholder="Name"/>
+                            <input class="contact-text" type="text" name="visitor_email" placeholder="Email"/>
+                            <input class="contact-text" type="text" name="email_title" placeholder="Subject"/>
+                            <textarea class="contact-text" placeholder="Your Message" name="visitor_message" rows="4" cols="50"></textarea>
+                            <button type="submit" class="button alt">Send!</button>
+                           
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper padding">
+                <div class="inner">
+                    <div class="box">
+                        <div class="content align-center">
+                    <h4>You can also contact me @</h4>
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/esaikia/" target="_blank" class="icon fa-linkedin"><span
+                                class="label">Linekdin</span></a></li>
+                    <li><a href="https://www.instagram.com/the_mopster_travelogue/?hl=en" target="_blank"
+                            class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="mailto:esaikia@protonmail.com" target="_blank" class="icon fa-envelope-o"><span
+                                class="label">Email</span></a></li>
+                </ul>
+            </div>
+                     
+        </div>
+    </div>
+            </div>
+        </section>
+
+        
+
+        
+
+	<!-- Footer -->
+	<footer id="footer">
+	
+		<div class="copyright">
+			&copy; EashanSaikia. All rights reserved.
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+    <script>
+		$(window).resize(function () {
+
+			resize();
+
+		});
+		$(window).load(function () {
+			resize();
+		})
+
+		function resize() {
+			if ($(this).width() < 600) {
+				document.getElementById("menu1").classList.add("hide");
+				document.getElementById("menu1").classList.remove("show");
+
+
+				document.getElementById("menu2").classList.add("show");
+				document.getElementById("menu2").classList.remove("hide");
+
+			}
+			else {
+				document.getElementById("menu2").classList.add("hide");
+				document.getElementById("menu2").classList.remove("show");
+
+
+				document.getElementById("menu1").classList.add("show");
+				document.getElementById("menu1").classList.remove("hide");
+
+			}
+		}
+	</script>
+</body>
+
+</html>
